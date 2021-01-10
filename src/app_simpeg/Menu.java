@@ -17,18 +17,18 @@ public class Menu extends javax.swing.JFrame {
 
         jMenu1 = new javax.swing.JMenu();
         jToolBar1 = new javax.swing.JToolBar();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        btnToolbarPegawai = new javax.swing.JButton();
+        btnToolbarCari = new javax.swing.JButton();
         jSeparator3 = new javax.swing.JToolBar.Separator();
-        jButton3 = new javax.swing.JButton();
+        btnToolbarLogout = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu2 = new javax.swing.JMenu();
-        jMenuItem1 = new javax.swing.JMenuItem();
-        jMenuItem4 = new javax.swing.JMenuItem();
-        jMenuItem2 = new javax.swing.JMenuItem();
+        menuPegawai = new javax.swing.JMenuItem();
+        menuGolongan = new javax.swing.JMenuItem();
+        menuCari = new javax.swing.JMenuItem();
         jMenu3 = new javax.swing.JMenu();
-        jMenuItem3 = new javax.swing.JMenuItem();
+        menuLogout = new javax.swing.JMenuItem();
 
         jMenu1.setText("jMenu1");
 
@@ -37,83 +37,88 @@ public class Menu extends javax.swing.JFrame {
 
         jToolBar1.setRollover(true);
 
-        jButton1.setFont(new java.awt.Font("Segoe UI", 0, 12)); // NOI18N
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/add-user.png"))); // NOI18N
-        jButton1.setText("Tambah Pegawai");
-        jButton1.setFocusable(false);
-        jButton1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton1.setMargin(new java.awt.Insets(2, 16, 2, 16));
-        jButton1.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        btnToolbarPegawai.setFont(new java.awt.Font("Segoe UI", 0, 12)); // NOI18N
+        btnToolbarPegawai.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/add-user.png"))); // NOI18N
+        btnToolbarPegawai.setText("Data Pegawai");
+        btnToolbarPegawai.setFocusable(false);
+        btnToolbarPegawai.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnToolbarPegawai.setMargin(new java.awt.Insets(2, 16, 2, 16));
+        btnToolbarPegawai.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        btnToolbarPegawai.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                btnToolbarPegawaiActionPerformed(evt);
             }
         });
-        jToolBar1.add(jButton1);
+        jToolBar1.add(btnToolbarPegawai);
 
-        jButton2.setFont(new java.awt.Font("Segoe UI", 0, 12)); // NOI18N
-        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/search.png"))); // NOI18N
-        jButton2.setText("Cari Pegawai");
-        jButton2.setFocusable(false);
-        jButton2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton2.setMargin(new java.awt.Insets(2, 16, 2, 16));
-        jButton2.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        btnToolbarCari.setFont(new java.awt.Font("Segoe UI", 0, 12)); // NOI18N
+        btnToolbarCari.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/search.png"))); // NOI18N
+        btnToolbarCari.setText("Cari Pegawai");
+        btnToolbarCari.setFocusable(false);
+        btnToolbarCari.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnToolbarCari.setMargin(new java.awt.Insets(2, 16, 2, 16));
+        btnToolbarCari.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        btnToolbarCari.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                btnToolbarCariActionPerformed(evt);
             }
         });
-        jToolBar1.add(jButton2);
+        jToolBar1.add(btnToolbarCari);
         jToolBar1.add(jSeparator3);
 
-        jButton3.setFont(new java.awt.Font("Segoe UI", 0, 12)); // NOI18N
-        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/sign-out.png"))); // NOI18N
-        jButton3.setText("Log Out");
-        jButton3.setFocusable(false);
-        jButton3.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton3.setMargin(new java.awt.Insets(2, 16, 2, 16));
-        jButton3.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        btnToolbarLogout.setFont(new java.awt.Font("Segoe UI", 0, 12)); // NOI18N
+        btnToolbarLogout.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/sign-out.png"))); // NOI18N
+        btnToolbarLogout.setText("Log Out");
+        btnToolbarLogout.setFocusable(false);
+        btnToolbarLogout.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnToolbarLogout.setMargin(new java.awt.Insets(2, 16, 2, 16));
+        btnToolbarLogout.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        btnToolbarLogout.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                btnToolbarLogoutActionPerformed(evt);
             }
         });
-        jToolBar1.add(jButton3);
+        jToolBar1.add(btnToolbarLogout);
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jMenu2.setText("Master Data");
 
-        jMenuItem1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/add-user.png"))); // NOI18N
-        jMenuItem1.setText("Pegawai");
-        jMenu2.add(jMenuItem1);
-
-        jMenuItem4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/connect-people.png"))); // NOI18N
-        jMenuItem4.setText("Golongan");
-        jMenuItem4.addActionListener(new java.awt.event.ActionListener() {
+        menuPegawai.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/add-user.png"))); // NOI18N
+        menuPegawai.setText("Pegawai");
+        menuPegawai.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem4ActionPerformed(evt);
+                menuPegawaiActionPerformed(evt);
             }
         });
-        jMenu2.add(jMenuItem4);
+        jMenu2.add(menuPegawai);
 
-        jMenuItem2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/search.png"))); // NOI18N
-        jMenuItem2.setText("Cari Pegawai");
-        jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
+        menuGolongan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/connect-people.png"))); // NOI18N
+        menuGolongan.setText("Golongan");
+        menuGolongan.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem2ActionPerformed(evt);
+                menuGolonganActionPerformed(evt);
             }
         });
-        jMenu2.add(jMenuItem2);
+        jMenu2.add(menuGolongan);
+
+        menuCari.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/search.png"))); // NOI18N
+        menuCari.setText("Cari Pegawai");
+        menuCari.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                menuCariActionPerformed(evt);
+            }
+        });
+        jMenu2.add(menuCari);
 
         jMenuBar1.add(jMenu2);
 
         jMenu3.setText("Utility");
 
-        jMenuItem3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/sign-out.png"))); // NOI18N
-        jMenuItem3.setText("Log Out");
-        jMenu3.add(jMenuItem3);
+        menuLogout.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/sign-out.png"))); // NOI18N
+        menuLogout.setText("Log Out");
+        jMenu3.add(menuLogout);
 
         jMenuBar1.add(jMenu3);
 
@@ -137,25 +142,29 @@ public class Menu extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+    private void btnToolbarPegawaiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnToolbarPegawaiActionPerformed
+        new FormPegawai().setVisible(true);
+    }//GEN-LAST:event_btnToolbarPegawaiActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton2ActionPerformed
+    private void btnToolbarCariActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnToolbarCariActionPerformed
+        new FormPencarian().setVisible(true);
+    }//GEN-LAST:event_btnToolbarCariActionPerformed
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton3ActionPerformed
+    private void btnToolbarLogoutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnToolbarLogoutActionPerformed
+        new Menu().setVisible(false);
+    }//GEN-LAST:event_btnToolbarLogoutActionPerformed
 
-    private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jMenuItem2ActionPerformed
+    private void menuCariActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuCariActionPerformed
+        new FormPencarian().setVisible(true);
+    }//GEN-LAST:event_menuCariActionPerformed
 
-    private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jMenuItem4ActionPerformed
+    private void menuPegawaiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuPegawaiActionPerformed
+        new FormPegawai().setVisible(true);
+    }//GEN-LAST:event_menuPegawaiActionPerformed
+
+    private void menuGolonganActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuGolonganActionPerformed
+        new FormGolongan().setVisible(true);
+    }//GEN-LAST:event_menuGolonganActionPerformed
 
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
@@ -165,7 +174,7 @@ public class Menu extends javax.swing.JFrame {
          */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
+                if ("Windows".equals(info.getName())) {
                     javax.swing.UIManager.setLookAndFeel(info.getClassName());
                     break;
                 }
@@ -192,19 +201,19 @@ public class Menu extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
+    private javax.swing.JButton btnToolbarCari;
+    private javax.swing.JButton btnToolbarLogout;
+    private javax.swing.JButton btnToolbarPegawai;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
     private javax.swing.JMenuBar jMenuBar1;
-    private javax.swing.JMenuItem jMenuItem1;
-    private javax.swing.JMenuItem jMenuItem2;
-    private javax.swing.JMenuItem jMenuItem3;
-    private javax.swing.JMenuItem jMenuItem4;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JToolBar.Separator jSeparator3;
     private javax.swing.JToolBar jToolBar1;
+    private javax.swing.JMenuItem menuCari;
+    private javax.swing.JMenuItem menuGolongan;
+    private javax.swing.JMenuItem menuLogout;
+    private javax.swing.JMenuItem menuPegawai;
     // End of variables declaration//GEN-END:variables
 }
